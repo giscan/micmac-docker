@@ -23,19 +23,27 @@ I use Archlinux and building is a bit complicated. There is a user repository na
 **How to run micmac-docker container ?**
 
 First you have to build the container by typing in a terminal :
+
 `docker build -t giscan/micmac git://github.com/giscan/micmac-docker`
+
 Then you could launch CLI binaries from docker with 
+
 `docker run -it micmac mm3d`
+
 Watch your container : 
+
 `docker images`
 
 
 **How can I delete this thing ?**
+
 Just remove it with docker : 
+
 `docker rmi -f giscan/micmac`
 
 
 **Mercurial repository of Micmac is updated, how could I update micmac ?**
+
 `docker run -it micmac update_micmac.sh`
 
 
