@@ -1,4 +1,4 @@
-# Docker for Micmac
+# Docker container for Micmac
 Micmac in a docker container
 Micmac is a photogrammetry software developped by IGN (French National Geographic Institute) under CeCILL-B licence
 
