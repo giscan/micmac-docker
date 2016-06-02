@@ -12,5 +12,5 @@ ADD update_micmac.sh /update_micmac.sh
 RUN chmod +x /setup.sh
 RUN chmod +x /update_micmac.sh
 RUN /setup.sh
-Mount /home (persistent data)
+#Mount /home (persistent data)
 VOLUME /home
