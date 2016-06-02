@@ -2,7 +2,7 @@ echo "*******************************************************"
 echo "*********           UPDATE MICMAC             *********"
 echo "*******************************************************"
 cd
-cd /opt/micmac
+cd /opt/
 echo "*******************************************************"
 echo "**********   DOWNLOADING THE LAST CHANGES    **********"
 echo "**********  (This may take several minutes)  **********"
@@ -13,10 +13,10 @@ hg pull https://culture3d:culture3d@geoportail.forge.ign.fr/hg/culture3d micmac
 hg update
 cd build/
 echo "*******************************************************"
-echo "********           COMPILING MICMAC           *********"
+echo "********           BUILDING  MICMAC           *********"
 echo "*******************************************************"
 cmake -DBUILD_PATH_BIN="/usr/bin" \
-	-DDEPLOY=1
+	-DDEPLOY=1 \
 	-DWITH_QT5=1 \
 	-DBUILD_POISSON=1 \
 	-DBUILD_RNX2RTKP=1 \
@@ -24,7 +24,7 @@ cmake -DBUILD_PATH_BIN="/usr/bin" \
 	-DWITH_OPEN_MP=ON \
 	-DWITH_ETALONPOLY=ON \
 	-DWITH_DOXYGEN=ON \
-	-DBUILD_POISSON=ON  ../
+	../
 NBRP=$(cat /proc/cpuinfo | grep processor | wc -l)
 make -j$NBRP
 make install 
