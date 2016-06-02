@@ -28,7 +28,7 @@ First you have to build the container by typing in a terminal :
 
 Then you could launch CLI binaries from docker with 
 
-`docker run -it micmac mm3d`
+`docker run -it giscan/micmac mm3d`
 
 Watch your container : 
 
@@ -44,7 +44,7 @@ Just remove it with docker :
 
 **Mercurial repository of Micmac is updated, how could I update micmac ?**
 
-`docker run -it micmac update_micmac.sh`
+`docker run -it giscan/micmac update_micmac.sh`
 
 
 
