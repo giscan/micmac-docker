@@ -1,18 +1,4 @@
 echo "*******************************************************"
-echo "*********       INSTALLING LIBRAIRIES         *********"
-echo "*******************************************************"
-apt-get update && apt-get install x11proto-core-dev make \
-cmake libx11-dev mercurial subversion imagemagick gcc g++ \
-exiv2 libimage-exiftool-perl libgeo-proj4-perl \ 
-mesa-common-dev libgl1-mesa-dev libglapi-mesa libglu1-mesa \
-qt5-default doxygen opencl-headers
-echo "*******************************************************"
-echo "**********       LIBRAIRIES INSTALLED        **********"
-echo "*******************************************************"
-echo " "
-echo " "
-echo " "
-echo "*******************************************************"
 echo "**********        DOWNLOADING MICMAC         **********"
 echo "**********  (This may take several minutes)  **********"
 echo "**********         user : culture3d          **********"
