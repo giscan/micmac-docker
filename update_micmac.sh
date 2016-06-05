@@ -2,7 +2,7 @@ echo "*******************************************************"
 echo "*********           UPDATE MICMAC             *********"
 echo "*******************************************************"
 cd
-cd /opt/
+cd /
 echo "*******************************************************"
 echo "**********   DOWNLOADING THE LAST CHANGES    **********"
 echo "**********  (This may take several minutes)  **********"
@@ -15,8 +15,7 @@ cd build/
 echo "*******************************************************"
 echo "********           BUILDING  MICMAC           *********"
 echo "*******************************************************"
-cmake -DBUILD_PATH_BIN="/usr/bin" \
-	-DDEPLOY=1 \
+cmake \
 	-DWITH_QT5=1 \
 	-DBUILD_POISSON=1 \
 	-DBUILD_RNX2RTKP=1 \
