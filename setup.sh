@@ -4,7 +4,7 @@ echo "**********  (This may take several minutes)  **********"
 echo "**********         user : culture3d          **********"
 echo "**********       password : culture3d        **********"
 echo "*******************************************************"
-cd /opt
+cd /
 hg clone https://culture3d:culture3d@geoportail.forge.ign.fr/hg/culture3d micmac
 echo "*******************************************************"
 echo "************       MICMAC DOWNLOADED       ************"
@@ -18,8 +18,7 @@ echo "*******************************************************"
 cd micmac
 mkdir build
 cd build
-cmake -DBUILD_PATH_BIN="/usr/bin" \
-	-DDEPLOY=1 \
+cmake \
 	-DWITH_QT5=1 \
 	-DBUILD_POISSON=1 \
 	-DBUILD_RNX2RTKP=1 \
